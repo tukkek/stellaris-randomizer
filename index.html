@@ -1,0 +1,30 @@
+<title>Stellaris randomizer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div>A simple game-setup settings randomizer for Stellaris. Most settings are left to personal preference as they'd be spoiled by knowing them beforehand anyway, largely defeating the purpose of a randomizer. Sliders are moderately conservative for the same reason, while still providing some variety in every new game.</div>
+
+<button id='randomize'>Generate</button>
+
+<div id='length'>
+  <strong>Game length:</strong>
+  <label><input class='normal' type='radio' name='length' value='1' checked> Default</label>
+  <label><input class='normal' type='radio' name='length' value='.5'> Short</label>
+  <label><input class='normal' type='radio' name='length' value='.25'> Very short</label>
+</div>
+<div><strong>Galaxy shape</strong>: <span id='galaxy'></span>.</div>
+<div><strong>Tech and tradition costs</strong>: <span id='tech'></span>.</div>
+<div><strong>Habitable worlds</strong>: <span id='worlds'></span>.</div>
+<div><strong>Primitive civilizations</strong>: <span id='primitives'></span>.</div>
+<div><strong>Tech and tradition costs</strong>: <span id='tech'></span>.</div>
+<div><strong>Mid-game start year</strong>: <span id='mid'></span>.</div>
+<div><strong>Late-game start year</strong>: <span id='late'></span>.</div>
+<div><strong>Victory year</strong>: <span id='victory'></span>.</div>
+<div><strong>Hyperlane density</strong>: <span id='hyperlanes'></span>.</div>
+<div><strong>Abandoned gateways</strong>: <span id='gateways'></span>.</div>
+<div><strong>Wormhole pairs</strong>: <span id='wormholes'></span>.</div>
+
+<script type='module'>
+  import * as randomizer from './randomizer.js'
+  randomizer.setup()
+</script>
